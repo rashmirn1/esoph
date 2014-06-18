@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predicting Risk of Oesophageal cancer in Smokers and Alcoholics</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Predicting Risk of Oesophageal cancer in Smokers and Alcoholics">
+  <meta name="author" content="Rashmi Nalavade">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="./libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="./libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="./libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="./libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="./libraries/frameworks/io2012/js/slides" 
+    src="./libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Predicting Risk of Oesophageal cancer in Smokers and Alcoholics</h1>
+    <h2>Developing Data Products Peer Assignment</h2>
+    <p>Rashmi Nalavade<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application predicts the risk of developing Oesophageal cancer amongst smokers and alcoholics. The application predicts the cancer risk using the features such as the subject&#39;s Age group, Daily alcohol consumption and Daily tobacco consumption.</p>
+
+<p>This application uses data from a case-control study of (o)esophageal cancer in Ille-et-Vilaine, France. This data named &#39;esoph&#39; is available in the R datasets package.</p>
+
+<pre><code class="r">summary(esoph)
+</code></pre>
+
+<pre><code>##    agegp          alcgp         tobgp        ncases        ncontrols   
+##  25-34:15   0-39g/day:23   0-9g/day:24   Min.   : 0.00   Min.   : 1.0  
+##  35-44:15   40-79    :23   10-19   :24   1st Qu.: 0.00   1st Qu.: 3.0  
+##  45-54:16   80-119   :21   20-29   :20   Median : 1.00   Median : 6.0  
+##  55-64:16   120+     :21   30+     :20   Mean   : 2.27   Mean   :11.1  
+##  65-74:15                                3rd Qu.: 4.00   3rd Qu.:14.0  
+##  75+  :11                                Max.   :17.00   Max.   :60.0
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Oesophageal Cancer Risk Predictions - Main Screen</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The main screen is displayed below. The Oesophageal Cancer Risk Prediction for the selected age group, alcohol and tobacco consumption group is circled in red.</p>
+
+<div style='text-align: center;'>
+    <img height='450' src='./assets/img/predict.png'  border ='5' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Selecting the age group and alcohol consumption group</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>You can select the subject&#39;s age group and alcohol consumption group from a dropdown list as shown below. Similarly you can also select the tobacco consumption group.</p>
+
+<div style='text-align: center;'>
+    <img height='360' src='./assets/img/agegp.png' />
+    <img height='360' src='./assets/img/alcgp.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Oesophageal Cancer Risk Predictions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Oesophageal Cancer Risk Prediction for the selected age group, alcohol and tobacco consumption group is shown on the screen as follows (in the red circle) :</p>
+
+<div style='text-align: center;'>
+    <img height='450' src='./assets/img/predict.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>If this brief introduction has piqued your interest, feel free to have a peek at the actual application at the following URL:</p>
+
+<p><a href="https://rashmirn1.shinyapps.io/esoph/">https://rashmirn1.shinyapps.io/esoph/</a></p>
+
+<p>As a bonus I have also included the R code used to generate this application at application site.</p>
+
+<p>I sincerely hope that you find the actual application much more interesting than this brief commentary.</p>
+
+<h1><em>Thank You for your interest and time.</em></h1>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Oesophageal Cancer Risk Predictions - Main Screen'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Selecting the age group and alcohol consumption group'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Oesophageal Cancer Risk Predictions'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Conclusion'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="./libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
